@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: black; */
+  color: black;
 }
 
 code {
@@ -13,9 +15,19 @@ code {
 }
 
 .Container{
-  border: solid;
+  border: solid white;
   margin: 25px;
-  background-color: aquamarine;
+  /* background-color: black; */
   display: flex;
   justify-content: center;
+}
+
+.img-container{
+  border: solid;
+}
+.album-card{
+  border: solid red;
+}
+p{
+  /* color:gainsboro; */
 }

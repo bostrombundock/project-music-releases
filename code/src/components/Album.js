@@ -1,19 +1,26 @@
 import React from "react";
 
 
-const Album = () => {
-    return (
-        <section className='Container'>
-        <div>
-          <h1>Testy Mc Testyface!</h1>
-          <p>This is a test</p>
-          <p>Testy testy test</p>
-          <img src="https://www.placecage.com/200/300" alt="Nicolas Cage"/>
-        </div>
-      </section>
-    )
-    };
-    
-    export default Album;
+const Album = (props) => {
+  console.log('props',props)
 
+  return (
+         <section className='Container'>
+           <div className="album-card">
+         <div>
+           <div className="img-container">
+          <img src={props.albumDetails.images[1].url} alt="Album cover"/>
+           </div>
+           <h1>{props.albumDetails.name}</h1>
+           <p>{props.albumDetails.artists[0].name}</p>
+         <a href="{props.albumDetails.ex}">link to album</a>
+        </div>
+
+
+         </div>
+       </section>
+     )
+     };
+    
+     export default Album;
     
