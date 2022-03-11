@@ -1,18 +1,13 @@
 import React from "react";
 
-// export const Artist = () => {
-//     return (
-//         <section className='Container'>
-//         <div>
-//         <h1>Testy Mc Testyface!</h1>
-//         <p>This is a test</p>
-//         <p>Testy testy test</p>
-//         <img src="https://www.placecage.com/200/300" alt="Nicolas Cage"/>
-//       </div>
-//     </section>
-//   )
+export const Artist = (props) => {
+return(
+    <a href={props.artistDetails.external_urls.spotify} target="_blank" rel="noopener noreferrer" >
+    <span>{props.artistDetails.name} </span>
+    </a>
+)
 
-// };
+ };
 
-//  export default Artist;
+ export default Artist;
 

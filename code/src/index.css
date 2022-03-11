@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: black; */
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 code {
@@ -15,19 +15,75 @@ code {
 }
 
 .Container{
-  border: solid white;
+  border: solid black;
   margin: 25px;
-  /* background-color: black; */
+  background-color: black; 
   display: flex;
   justify-content: center;
 }
 
+
 .img-container{
-  border: solid;
+  border: black;
+  position: relative;
 }
-.album-card{
-  border: solid red;
-}
+
+
 p{
-  /* color:gainsboro; */
+   color:gainsboro;
+}
+
+.album-wrapper {
+display: flex;
+flex-wrap: wrap;
+}
+
+h1 {
+width: 300px;
+color: white;
+
+} 
+
+.icons {
+width: 10%;
+height: auto;
+
+}
+
+.play-icon {
+width: 20%;
+height: auto;
+
+
+}
+.play-icon:hover {
+width: 35%;
+
+}
+
+
+.overlay {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+position: absolute;
+top: 0;
+left:0;
+right: 0;
+bottom: 0;
+opacity: 0;
+background-color: rgba(0, 0, 0, 0.5);
+width: 100%;
+height: 100%;
+
+}
+.overlay:hover {
+opacity: 1;
+
+}
+
+a {
+text-decoration: none;
+color: white;
+
 }
