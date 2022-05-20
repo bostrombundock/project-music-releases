@@ -1,10 +1,10 @@
-import React from 'react'
-const Header =() => {
-return (
-   <div className='header-container'>
-   <h1 className='header-text'> New albums & singles </h1> 
-   </div>
-)
-
-}
+import React from "react";
+const Header = () => {
+  return (
+    <div>
+      <h1> New albums & singles </h1>
+      <hr />
+    </div>
+  );
+};
 export default Header;
