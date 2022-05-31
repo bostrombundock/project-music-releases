@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
@@ -15,17 +13,18 @@ code {
 }
 h1 {
   font-size: large;
-  margin-left: 30px;
+  margin-left: 40px;
   width: fit-content;
 }
+
 hr {
   border-color: #2d2d2d;
 }
 .Container {
-  margin: 25px;
   background-color: black;
   display: flex;
   justify-content: center;
+  margin: 5px;
 }
 
 .img-container {
@@ -35,17 +34,18 @@ hr {
 .album-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 h2 {
   width: 300px;
-  color: white;
-  font-size: medium;
+  color: #ffffff;
+  font-size: 14px;
   margin-bottom: 5px;
 }
 h2:hover {
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: #ffffff;
 }
 
 .icons {
@@ -59,6 +59,7 @@ h2:hover {
 }
 .play-icon:hover {
   width: 35%;
+  transition: 0.3s ease-out;
 }
 
 .overlay {
@@ -81,12 +82,22 @@ h2:hover {
 
 a {
   text-decoration: none;
-  color: gray;
-  font-size: small;
-  font-weight: bold;
+  color: #a0a0a0;
+  font-size: 14px;
 }
 a:hover {
   text-decoration: underline;
-  text-decoration-color: white;
-  color: white;
+  text-decoration-color: #a0a0a0;
+  color: #a0a0a0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    margin-left: 95px;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    margin-left: 50px;
+  }
 }
